@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer's Space</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional styles for visibility */
+        .hidden { display: none; }
+       
+    </style>
+</head>
+<body class="h-screen flex justify-center items-center bg-gray-100" style="background-color: #ffe5d9;">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+        <h2 class="text-2xl font-bold mb-4" id="formTitle">Login</h2>
+		
+        <form action="/home" method="post">
+            <p class="text-red-500 text-sm mb-4 hidden" id="errorMessage"></p>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                    Name
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="name"
+                    type="text"
+					name="name"
+                />
+            </div>
+            <div class="mb-4 hidden" id="emailField">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                    Email
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email"
+                    type="email"
+					name="email"
+                />
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                    Password
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="password"
+                    type="password"
+					name="password"
+                />
+            </div>
+            <div class="mb-4 hidden" id="confirmPasswordField">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="confirmPassword">
+                    Confirm Password
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="confirmPassword"
+                    type="password"
+					name="conform_password"
+                />
+            </div>
+            <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+            >
+                Register
+            </button>
+            <p class="text-sm mt-4">
+                Not a member? 
+                <span class="text-blue-500 cursor-pointer" id="toggleButton">Register</span>
+            </p>
+        </form>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const formTitle = document.getElementById('formTitle');
+        const emailField = document.getElementById('emailField');
+        const confirmPasswordField = document.getElementById('confirmPasswordField');
+        const errorMessage = document.getElementById('errorMessage');
+        const authForm = document.getElementById('authForm');
+
+        let isLogin = true;
+
+        toggleButton.addEventListener('click', () => {
+            isLogin = !isLogin;
+            formTitle.textContent = isLogin ? 'Login' : 'Register';
+            emailField.classList.toggle('hidden', isLogin);
+            confirmPasswordField.classList.toggle('hidden', isLogin);
+            toggleButton.textContent = isLogin ? 'Register' : 'Login';
+            errorMessage.classList.add('hidden');
+        });
+
+        authForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const password = document.getElementById('password').value;
+            const email = document.getElementById('email').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (isLogin) {
+                if (name && password) {
+                    console.log('Login successful');
+                    errorMessage.classList.add('hidden');
+                } else {
+                    errorMessage.textContent = 'Please fill in all fields';
+                    errorMessage.classList.remove('hidden');
+                }
+            } else {
+                if (username && password && confirmPassword && email) {
+                    if (password === confirmPassword) {
+                        console.log('Registration successful');
+                        errorMessage.classList.add('hidden');
+                    } else {
+                        errorMessage.textContent = 'Passwords do not match';
+                        errorMessage.classList.remove('hidden');
+                    }
+                } else {
+                    errorMessage.textContent = 'Please fill in all fields';
+                    errorMessage.classList.remove('hidden');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

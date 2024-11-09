@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer's Space</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- navbar -->
+        <nav>
+            <div class="logo">
+                <h1>Buyer's Space</h1>
+            </div>
+			<div class="InputContainer">
+			  <input type="text" name="text" class="input" id="input" placeholder="Search">
+			  
+			  <label for="input" class="labelforsearch">
+			<svg viewBox="0 0 512 512" class="searchIcon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+			</label>
+			<div class="border"></div>
+
+			<button class="micButton"><svg viewBox="0 0 384 512" class="micIcon"><path d="M192 0C139 0 96 43 96 96V256c0 53 43 96 96 96s96-43 96-96V96c0-53-43-96-96-96zM64 216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 89.1 66.2 162.7 152 174.4V464H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H216V430.4c85.8-11.7 152-85.3 152-174.4V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 70.7-57.3 128-128 128s-128-57.3-128-128V216z"></path></svg>
+			</button>
+
+			</div>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="#shop" id="shops">Shop</a></li>
+                <li><a href="#review" id="reviews">Review</a></li>
+                <li><a href="#blog" id="blogs">Blog</a></li>
+                <li><a href="#contact" id="contacts">Contact</a></li>
+
+            </ul>
+            <div class="icon">
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- main -->
+
+        <div class="main">
+            <div class="mainText">
+                <h2>Fashion Hub</h2>
+                <h1>Fashion For Always</h1>
+                <button>Explore</button>
+            </div>
+            <img src="" th:src="@{img/main.png}" alt="">
+        </div>
+
+        <!-- card -->
+
+        <div class="shop" id="shop">
+            <div class="head">
+                <h2>Trending <span>Cloth's</span></h2>
+            </div>
+            <div class="cards">
+                <div class="crd">
+                    <img src="" th:src="@{/img/c1.webp}" alt="">
+                    <h3>top</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3> ₹221 : Only</h3>
+                </div>
+                <div class="crd">
+                    <img src="" th:src="@{/img/c3.webp}" alt="">
+                    <h3>top</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3> ₹221 : Only</h3>
+                </div>
+                <div class="crd">
+                    <img src="" th:src="@{/img/c2.webp}" alt="">
+                    <h3>top</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3> ₹221 : Only</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="crd">
+                <img src="" th:src="@{/img/c4.webp}" alt="">
+                <h3>top</h3>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3> ₹221 : Only</h3>
+            </div>
+            <div class="crd">
+                <img src="" th:src="@{/img/c5.webp}" alt="">
+                <h3>top</h3>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3> ₹221 : Only</h3>
+            </div>
+            <div class="crd">
+                <img src="" th:src="@{/img/c6.webp}" alt="">
+                <h3>top</h3>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3> ₹221 : Only</h3>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="crd">
+                <img src="" th:src="@{/img/c7.webp}" alt="">
+                <h3>top</h3>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3> ₹221 : Only</h3>
+            </div>
+            <div class="crd">
+                <img src="" th:src="@{/img/c8.webp}" alt="">
+                <h3>top</h3>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3> ₹221 : Only</h3>
+            </div>
+            <div class="crd">
+                <img src="" th:src="@{/img/c9.webp}" alt="">
+                <h3>top</h3>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3> ₹221 : Only</h3>
+            </div>
+        </div>
+		<div class="cards">
+		<div class="crd">
+		                <img src="" th:src="@{/img/blouse.jpg}" alt="">
+		                <h3>Blouse</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹399 : Only</h3>
+		                <p>upto 70% off</p>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/blouse1.jpg}" alt="">
+		                <h3>Blouse</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹454 : Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/blouse2.jpg}" alt="">
+		                <h3>Blouse</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹799 : Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/blouse3.jpg}" alt="">
+		                <h3>Blouse</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹299 : Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/dupata.jpg}" alt="">
+		                <h3>Dupatta</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹199 : Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/dupata1.jpg}" alt="">
+		                <h3>Dupatta</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹124 : Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/dupata2.jpg}" alt="">
+		                <h3>Dupatta</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹245 : Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/dupata3.jpg}" alt="">
+		                <h3>Dupatta</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹210 : Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/grown.jpg}" alt="">
+		                <h3>Grown</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹799 : Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/grown1.jpg}" alt="">
+		                <h3>Grown</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹545: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/grown2.jpg}" alt="">
+		                <h3>Grown</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹499: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/grown3.jpg}" alt="">
+		                <h3>Grown</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹599: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/images.jpeg}" alt="">
+		                <h3>Jeans</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹899: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/jean.jpeg}" alt="">
+		                <h3>Jeans</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹399: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/kurti.jpg}" alt="">
+		                <h3>Jeans</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹299: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/kurti1.jpg}" alt="">
+		                <h3>Kurti</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹367: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/kurti2.jpg}" alt="">
+		                <h3>Kurti</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹245: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/kurti3.jpg}" alt="">
+		                <h3>Kurti</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹405: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/lehenga.jpg}" alt="">
+		                <h3>Kurti</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹687: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/lehenga1.jpg}" alt="">
+		                <h3>Legenga</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹784: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/lehenga2.jpg}" alt="">
+		                <h3>Legenga</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹555: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/lehenga3.jpg}" alt="">
+		                <h3>Legenga</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹456: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/lehenga2.jpg}" alt="">
+		                <h3>Legenga</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹689: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/plazo.jpg}" alt="">
+		                <h3>Plazzo</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹756: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/plazo1.jpg}" alt="">
+		                <h3>Plazzo</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹451: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/plazo2.jpg}" alt="">
+		                <h3>Plazzo</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹857: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/plazo3.jpg}" alt="">
+		                <h3>Plazzo</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹957: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/sandle.jpg}" alt="">
+		                <h3>Sandle</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹395: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/sandle1.jpg}" alt="">
+		                <h3>Sandle</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹234: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/sandle2.jpg}" alt="">
+		                <h3>Sandle</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹145: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/sandle3.jpg}" alt="">
+		                <h3>Sandle</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹199: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/saree.jpeg}" alt="">
+		                <h3>Saree</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹677: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/saree1.jpeg}" alt="">
+		                <h3>Saree</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹489: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/saree2.jpeg}" alt="">
+		                <h3>Saree</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹356: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/saree3.webp}" alt="">
+		                <h3>Saree</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹349: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/saree4.jpeg}" alt="">
+		                <h3>Saree</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹539: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/shoes.jpg}" alt="">
+		                <h3>Shoe</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹688: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/shoes1.jpg}" alt="">
+		                <h3>Shoe</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹784: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/shoes2.jpg}" alt="">
+		                <h3>Shoe</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹899: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/shoes3.jpg}" alt="">
+		                <h3>Shoe</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹930: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/blazers.jpg}" alt="">
+		                <h3>Blazzer</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹690: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/blazers1.jpg}" alt="">
+		                <h3>Blazzer</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹845: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/blazers2.jpg}" alt="">
+		                <h3>Blazzer</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹754: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/blazers3.jpg}" alt="">
+		                <h3>Blazzer</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹704: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/cargo.jpg}" alt="">
+		                <h3>Cargo</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹873: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/cargo1.jpg}" alt="">
+		                <h3>Cargo</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹765: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/cargo2.jpg}" alt="">
+		                <h3>Cargo</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹865: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/cargo3.jpg}" alt="">
+		                <h3>Cargo</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹654: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/jean.jpeg}" alt="">
+		                <h3>Jeans</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/jeans.jpeg}" alt="">
+		                <h3>Jeans</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹640: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/jeans.jpg}" alt="">
+		                <h3>Jeans</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1046: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/jeans1.jpg}" alt="">
+		                <h3>Jeans</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1011: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/jeans2.jpg}" alt="">
+		                <h3>Kurta</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹641: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/jeans3.jpg}" alt="">
+		                <h3>Kurta</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹974: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/kurta.jpg}" alt="">
+		                <h3>Kurta</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹544: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/kurta1.jpg}" alt="">
+		                <h3>Kurta</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹354: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/kurta2.jpg}" alt="">
+		                <h3>Raincoat</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹865: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/kurta3.jpg}" alt="">
+		                <h3>Raincoat</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1744: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/raincoat.jpg}" alt="">
+		                <h3>Raincoat</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1199: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/raincoat1.jpg}" alt="">
+		                <h3>Raincoat</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1099: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/raincoat2.jpg}" alt="">
+		                <h3>Sweater</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1789: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/raincoat3.jpg}" alt="">
+		                <h3>Sweater</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹2543: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/sweater1.jpg}" alt="">
+		                <h3>Sweater</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1543: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/sweater2.jpg}" alt="">
+		                <h3>Sweater</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹993: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/tshirt.jpg}" alt="">
+		                <h3>Tshirt</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹393: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/tshirt1.jpg}" alt="">
+		                <h3>Tshirt</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹256: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/tshirt3.jpg}" alt="">
+		                <h3>Tshirt</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹199: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/tshirt2.jpg}" alt="">
+		                <h3>Tshirt</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹342: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/AC.jpg}" alt="">
+		                <h3>AC</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹56,323: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/AC1.jpg}" alt="">
+		                <h3>AC</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹44,999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/airpodes.jpg}" alt="">
+		                <h3>Airpode</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1,199: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/bulb.jpeg}" alt="">
+		                <h3>Bulb</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹199: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/bulb1.jpeg}" alt="">
+		                <h3>Bulb</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹120: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/fan.jpg}" alt="">
+		                <h3>Fan</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1100: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/fan1.jpg}" alt="">
+		                <h3>Fan</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1999: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/fridge.jpg}" alt="">
+		                <h3>Fridge</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹28,999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/fridge1.jpg}" alt="">
+		                <h3>Fridge</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹22,999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/fridge2.jpg}" alt="">
+		                <h3>Fridge</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹52,499: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/fridge3.jpg}" alt="">
+		                <h3>Fridge</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹76,499: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/headphone.jpg}" alt="">
+		                <h3>Headphone</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1,200: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/laptop.jpeg}" alt="">
+		                <h3>Laptop</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹39,999: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/laptop1.jpeg}" alt="">
+		                <h3>Laptop</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹54,999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/laptop2.jpeg}" alt="">
+		                <h3>Laptop</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹45,499: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/laptop3.jpeg}" alt="">
+		                <h3>Laptop</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹39,499: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/mixer.jpeg}" alt="">
+		                <h3>Mixer</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1300: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/mixer1.jpeg}" alt="">
+		                <h3>Mixer</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1900: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/mixer2.jpeg}" alt="">
+		                <h3>Mixer</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1555: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/mixer3.jpeg}" alt="">
+		                <h3>Mixer</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1723: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/neckband.jpg}" alt="">
+		                <h3>Neckband</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1523: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/phn.jpeg}" alt="">
+		                <h3>Mobile</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹12,999: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/phn1.jpeg}" alt="">
+		                <h3>Mobile</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹18,999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/phn2.jpeg}" alt="">
+		                <h3>Mobile</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹23,999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/phn3.jpeg}" alt="">
+		                <h3>Mobile</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹29,999: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/TV.jpg}" alt="">
+		                <h3>TV</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹39,999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/TV1.jpg}" alt="">
+		                <h3>TV</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹44,999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/TV2.jpg}" alt="">
+		                <h3>TV</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹69,999: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/TV3.jpg}" alt="">
+		                <h3>TV</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹54,999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/badsheet.jpeg}" alt="">
+		                <h3>Badsheet</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1,999: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/badsheet1.jpeg/}" alt="">
+		                <h3>Badsheet</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹1,399: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/badsheet2.jpg}" alt="">
+		                <h3>Badsheet</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹799: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/badsheet3.webp}" alt="">
+		                <h3>Badsheet</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹566: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/outdoor.jpeg}" alt="">
+		                <h3>Outdoor</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹456: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/outdoor1.jpeg}" alt="">
+		                <h3>Outdoor</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹634: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/eye.png}" alt="">
+		                <h3>Eye shadow</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹234: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/eye1.png}" alt="">
+		                <h3>Eye linear</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹99: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/eye2.jpeg}" alt="">
+		                <h3>Pencil Eye linear</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹122: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/eye3.png}" alt="">
+		                <h3>Pencil Eye linear</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹82: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/lipstic.jpeg}" alt="">
+		                <h3>Lipstick</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹199: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/lipstic1.jpeg}" alt="">
+		                <h3>Lipstick</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹201: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/lipstic2.jpeg}" alt="">
+		                <h3>Lipstick</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹182: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/lipstic3.jpeg}" alt="">
+		                <h3>Lipstick</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹299: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/oil1.jpeg}" alt="">
+		                <h3>Hair oil</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹252: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/oil2.jpeg}" alt="">
+		                <h3>Hair oil</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹523: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/oil3.jpeg}" alt="">
+		                <h3>Hair oil</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹644: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/oil.jpeg}" alt="">
+		                <h3>Hair oil</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹546: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/baby.jpeg}" alt="">
+		                <h3>Toy</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹234: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/baby1.jpeg}" alt="">
+		                <h3>Toy</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹123: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/baby2.jpeg}" alt="">
+		                <h3>Toy</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹333: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/soft.webp}" alt="">
+		                <h3>Soft Toy</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹89: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/soft1.jpeg}" alt="">
+		                <h3>Soft Toy</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹221: Only</h3>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/soft2.jpeg}" alt="">
+		                <h3>Soft Toy</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹221: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/soft3.jpeg}" alt="">
+		                <h3>Soft Toy</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹345: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/teddy.jpeg}" alt="">
+		                <h3>TeddyBear</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹543: Only</h3>
+		                <p>Upto 50% off</p>
+		            </div>
+		</div>
+		<div class="cards">
+		            <div class="crd">
+		                <img src="" th:src="@{/img/teddy1.jpeg}" alt="">
+		                <h3>TeddyBear</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹487: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/teddy2.jpeg}" alt="">
+		                <h3>TeddyBear</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹789: Only</h3>
+		            </div>
+		            <div class="crd">
+		                <img src="" th:src="@{/img/teddy3.jpeg}" alt="">
+		                <h3>TeddyBear</h3>
+		                <div class="rate">
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                    <i class="fa-solid fa-star"></i>
+		                </div>
+		                <h3>₹545: Only</h3>
+		            </div>
+		        </div>
+
+
+        <!-- review -->
+
+        <div class="customer" id="review">
+            <div class="head">
+                <h2>Customer <span>Review</span></h2>
+            </div>
+            <div class="reviews">
+
+                <div class="reviewCard">
+                    <img src="" th:src="@{/img/m1.jpg}" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing expedita earum accusamus saepe dicta enim
+                        neque unde odit?</p>
+                    <button>More.</button>
+                </div>
+                <div class="reviewCard">
+                    <img src="" th:src="@{/img/m2.jpg}" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing expedita earum accusamus saepe dicta enim
+                        neque unde odit?</p>
+                    <button>More.</button>
+                </div>
+                <div class="reviewCard">
+                    <img src="" th:src="@{/img/m3.jpg}" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing expedita earum accusamus saepe dicta enim
+                        neque unde odit?</p>
+                    <button>More.</button>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <!-- blog -->
+        <div class="blog" id="blog">
+            <div class="head">
+                <h2>Read <span>Blogs</span></h2>
+            </div>
+            <div class="blogContainer">
+                <div class="blogCard">
+                    <img src="" th:src="@{/img/c4.webp}" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse expedita possimus
+                        aperiam officia. </p>
+                    <a href="https://stylesearch.com/eu/blogs">Read More</a>
+                </div>
+                <div class="blogCard">
+                    <img src="" th:src="@{/img/c2.webp}" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse expedita possimus
+                        aperiam officia. </p>
+                    <a href="https://stylesearch.com/eu/blogs">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div class="connect" id="contact">
+            <div class="head">
+                <h2>Contact <span>Us</span></h2>
+            </div>
+            <div class="contact">
+                <input type="text" placeholder="Enter Your Name" id="name"><br>
+                <input type="text" placeholder="Enter Your Mobile Number" id="number"><br>
+                <button onclick="connect()">Connect</button>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <div class="footer">
+            <div class="text">
+                <h3>Shoppy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> Dolore eum vero dolorem tempore magni! <br>
+                    Inventore deleniti voluptas porro eligendi.</p>
+
+            </div>
+            <div class="text">
+                <h3>Explore</h3>
+                <p>All</p>
+                <p>Rated</p>
+                <p>Scores</p>
+                <p>Tipes</p>
+                <p>Guide</p>
+
+
+
+            </div>
+            <div class="text">
+                <h3>Connect</h3>
+                <p>Youtube</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>Facebook</p>
+                <p>Pintarest</p>
+
+
+            </div>
+            <div class="text">
+                <h3>Nity Grity</h3>
+                <p>Term & Condition</p>
+                <p>Privacy Policy</p>
+                <p>FAQs</p>
+                <p>Special credits</p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="itemPage">
+        <img id="itemImg" src="" alt="">
+        <div class="itemText">
+            <h2>Trending</h2>
+            <h2> ₹221 Only</h2>
+            <p>Quantity</p>
+            <input type="number" placeholder="1" value="1">
+            <div class="offer">
+                <h3>Available Offer's :</h3>
+                <p>Special PriceGet extra 13% off (price inclusive of cashback/coupon)</p>
+                <p>Bank Offer₹15 off on UPI Transaction</p>
+                <p>Bank OfferFlat ₹200 off on HDFC Bank Credit/Debit </p>
+                <p>Bank OfferFlat ₹200 off on HDFC Bank Credit/Debit </p>
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,<br> optio rationea dipisicing elit.
+                Possimus, optio ratione.</p>
+            <a id="backBtn">Add to cart</a>
+            <a id="buyBtn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="buyPage">
+        <div class="cross">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="content">
+
+        </div>
+		
+		
+    </div>
+	<div class=""></div>
+    <script src="" th:src="@{/js/script.js}"></script>
+</body>
+
+</html>

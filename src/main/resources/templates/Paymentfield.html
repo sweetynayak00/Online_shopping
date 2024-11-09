@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="max-w-md mx-auto p-4 md:p-6 lg:p-8 bg-white rounded shadow-md">
+        <h2 class="text-lg font-bold mb-4">Payment</h2>
+        
+        <!-- Order Summary -->
+        <div class="mb-4">
+            <h3 class="text-md font-bold mb-2">Order Summary</h3>
+            <ul>
+                <li class="flex justify-between mb-2">
+                    <span>Subtotal:</span>
+                    <span>$100</span>
+                </li>
+                <li class="flex justify-between mb-2">
+                    <span>Tax:</span>
+                    <span>$10</span>
+                </li>
+                <li class="flex justify-between font-bold">
+                    <span>Total:</span>
+                    <span>$110</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Payment Method Selection -->
+        <div class="mb-4">
+            <h3 class="text-md font-bold mb-2">Select Payment Method</h3>
+            <ul>
+                <li class="mb-2">
+                    <button class="w-full p-2 border border-gray-300 rounded bg-blue-500 text-white payment-option" onclick="selectPaymentMethod('Credit/Debit Card', this)">
+                        Credit/Debit Card
+                    </button>
+                </li>
+                <li class="mb-2">
+                    <button class="w-full p-2 border border-gray-300 rounded payment-option" onclick="selectPaymentMethod('PayPal', this)">
+                        PayPal
+                    </button>
+                </li>
+                <li class="mb-2">
+                    <button class="w-full p-2 border border-gray-300 rounded payment-option" onclick="selectPaymentMethod('Bank Transfer', this)">
+                        Bank Transfer
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Pay Now Button -->
+        <button class="w-full p-2 bg-blue-500 text-white rounded" id="paynow" onclick="paynow()">
+            Pay Now
+        </button>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script>
+      let selectedPaymentMethod = "";
+
+      // Function to highlight the selected payment method
+      function selectPaymentMethod(method, button) {
+        // Update the selected payment method
+        selectedPaymentMethod = method;
+
+        // Reset styles on all buttons
+        const buttons = document.querySelectorAll('.payment-option');
+        buttons.forEach(btn => {
+          btn.classList.remove('bg-blue-500', 'text-white');
+          btn.classList.add('border-gray-300');
+        });
+
+        // Highlight the selected button
+        button.classList.add('bg-blue-500', 'text-white');
+      }
+
+      // Function to handle the Pay Now button click
+      function paynow() {
+        if (!selectedPaymentMethod) {
+          alert("Please select a payment method.");
+        } else {
+          alert("Payment processed successfully with " + selectedPaymentMethod + "!");
+        }
+      }
+    </script>
+
+</body>
+</html>
