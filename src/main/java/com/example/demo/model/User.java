@@ -12,7 +12,7 @@ public class User {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer sn;
+	private Long id;
 	private String name;
 	private String email;
 	private String password;
@@ -37,11 +37,11 @@ public class User {
 
 
 
-	public int getSn() {
-		return sn;
+	public Long getId() {
+		return id;
 	}
-	public void setSn(int sn) {
-		this.sn = sn;
+	public void setId(Long id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;
@@ -49,7 +49,7 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getEmail() {
+    public String getEmail() {
 		return email;
 	}
 	public void setEmail(String email) {
@@ -73,10 +73,9 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [sn=" + sn + ", name=" + name + ", email=" + email + ", password=" + password
+		return "User [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password
 				+ ", conform_password=" + conform_password + "]";
 	}
-	
 	
 	
 }
